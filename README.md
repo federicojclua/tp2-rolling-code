@@ -15,6 +15,27 @@ Bienvenidos al repositorio de nuestro proyecto de streaming de música. Somos el
   <img src="https://media.giphy.com/media/FAcgzV1pXYcykAxSRO/giphy.gif" alt="GIF musica" width="300">
 </p>
 
+  # Nuestro Proyecto
+
+  El proyecto  se realizó con **HTML, CSS, BOOSTRAP y JAVASCRIPT** y es una página de streaming de música. Consta de una página principal en donde pueden visualizarse los distintos artistas por medio de un **carrousel**, adicionalmente puede accederse a los detalles de cada canción.
+<br>
+<br>
+  ![image](https://github.com/federicojclua/tp2-rolling-code/assets/156377897/a89cedd9-2618-44a3-b05f-9ea80e120a63)
+
+  También consta de un login que nos permite entrar de forma diferencial como **invitado o administrador**
+<br>
+<br>
+  ![image](https://github.com/federicojclua/tp2-rolling-code/assets/156377897/9d833d24-e975-4d00-999f-e71d48b3e648)
+
+
+  y por supuesto que también hay un **reproductor funcional**, con el cual se puede iniciar, detener y pasar de canción
+<br>
+<br>
+  ![image](https://github.com/federicojclua/tp2-rolling-code/assets/156377897/f5e20395-493e-415e-8feb-503042b608b0)
+
+  Finalmente hay funcionalidades que iremos puliendo a futuro cuando adquiramos más conocimientos, y que por el momento nos lleva a una página de error.
+
+  
 # Nuestra Travesía
 **1)-** Como primer paso creamos un grupo de **Whatsapp** para poder comunicarnos rápidamente. Allí por medio de votación se decidió encarar el proyecto de streaming
 
@@ -45,25 +66,6 @@ Bienvenidos al repositorio de nuestro proyecto de streaming de música. Somos el
   ![image](https://github.com/federicojclua/tp2-rolling-code/assets/156377897/cfabff7b-7ad1-476b-94bd-64b6fd115e36)
 <br>
 <br>
-  # Nuestro Proyecto
-
-  El proyecto  se realizó con **HTML, CSS, BOOSTRAP y JAVASCRIPT** y es una página de streaming de música. Consta de una página principal en donde pueden visualizarse los distintos artistas por medio de un **carrousel**, adicionalmente puede accederse a los detalles de cada canción.
-<br>
-<br>
-  ![image](https://github.com/federicojclua/tp2-rolling-code/assets/156377897/a89cedd9-2618-44a3-b05f-9ea80e120a63)
-
-  También consta de un login que nos permite entrar de forma diferencial como **invitado o administrador**
-<br>
-<br>
-  ![image](https://github.com/federicojclua/tp2-rolling-code/assets/156377897/9d833d24-e975-4d00-999f-e71d48b3e648)
-
-
-  y por supuesto que también hay un **reproductor funcional**, con el cual se puede iniciar, detener y pasar de canción
-<br>
-<br>
-  ![image](https://github.com/federicojclua/tp2-rolling-code/assets/156377897/f5e20395-493e-415e-8feb-503042b608b0)
-
-  Finalmente hay funcionalidades que iremos puliendo a futuro cuando adquiramos más conocimientos, y que por el momento nos lleva a una página de error.
 
 
 
