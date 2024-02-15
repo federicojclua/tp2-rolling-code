@@ -20,6 +20,7 @@ Bienvenidos al repositorio de nuestro proyecto de streaming de música. Somos el
   El proyecto  se realizó con **HTML, CSS, BOOSTRAP y JAVASCRIPT** y es una página de streaming de música. Consta de una página principal en donde pueden visualizarse los distintos artistas por medio de un **carrousel**, adicionalmente puede accederse a los detalles de cada canción.
 <br>
 <br>
+
   ![image](https://github.com/federicojclua/tp2-rolling-code/assets/156377897/a89cedd9-2618-44a3-b05f-9ea80e120a63)
 
   También consta de un login que nos permite entrar de forma diferencial como **invitado o administrador**
