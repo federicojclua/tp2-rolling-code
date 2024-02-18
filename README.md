@@ -11,7 +11,7 @@ Bienvenidos al repositorio de nuestro proyecto de streaming de música. Somos el
 <br>
 
 - ***🎵 Clua, Federico***
-- ***🎵 Del Valle, Carolina***
+- ***🎵 Gonzalez, Carolina***
 - ***🎵 Morales, Rosa***
 - ***🎵 Urzagasti, Juan***
 <br>
