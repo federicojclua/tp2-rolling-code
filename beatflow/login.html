@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Register </title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="assets/css/login_style.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/nosotros_styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-custom">
+            <div class="container-fluid">
+              <a class="navbar-brand text-light" href="main.html">BeatFlow</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="main.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="error404.html">Canciones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="error404.html">Lista de favoritos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="nosotros.html">Nosotros</a>
+                  </li>
+                </ul>
+    
+                <form class="d-flex" role="search">
+                  <input type="search" id="search-bar" class="form-control me-2" placeholder="Buscar canciones o artistas" aria-label="Search" autocomplete="off">
+                  <ul id="suggestionsContainer" class="suggestions-list" style="display: none;"></ul>
+                  <a href="login.html" class="btn btn-custom btn-m me-2" role="button">Login</a>
+                  <a href="error404.html" class="btn btn-custom btn-m me-2" role="button">Suscripción</a>
+              </form>
+                  
+                </div>
+            </div>
+          </nav>
+    </header>
+
+        <main>
+
+            <div class="container_all">
+                <div class="box_1">
+                    <div class="box_1-login">
+                        <h3>¿Ya tienes una cuenta?</h3>
+                        <p>Inicia sesión para entrar en la página</p>
+                        <button type="submit" class="btn_login" id="btn_login">Iniciar Sesión</button>
+                    </div>
+                    <div class="box_1-register">
+                        <h3>¿Aún no tienes una cuenta?</h3>
+                        <p>Regístrate para que puedas iniciar sesión</p>
+                        <button type="submit" class="btn_register" id="btn_register">Registrarse</button>
+                    </div>
+                </div>
+
+                <!--Formulario de Login y registro-->
+                <div class="container_login-register">
+                    <!--Login-->
+                    <form action="" class="form_login" id="form_login" onsubmit="return validateLoginForm()">
+                        <h2>Iniciar Sesión</h2>
+                        <input type="email" id="email" placeholder="Correo Electronico">
+                        
+                        <input type="password" id = "password" placeholder="Contraseña">
+                        
+                        <button type="submit" class="btn_login" id="btn_login">Iniciar Sesión</button>
+                    </form> 
+
+                    <!--Register-->
+                    <form action="" class="form_register" id="form_register" onsubmit="return validateRegisterForm()">
+                        <h2>Regístrarse</h2>
+                        <input type="text" placeholder="Nombre completo" id="nameR">
+                        <input type="email" placeholder="Correo Electrónico" id="emailR">
+                        <input type="text" placeholder="Usuario" id="user">
+                        <input type="password" placeholder="Contraseña" id="passwordR">
+                        <button type="submit" class="btn_register" id="btn_register">Registrarse</button>
+                    </form>
+                    <ul id="listUsers"></ul>
+                </div>
+            </div>
+
+        </main>
+
+        <script src="assets/js/script.js"></script>
+        <script src="assets/js/validar.js"></script>
+        <script src="assets/js/save_user.js"></script>
+</body>
+</html>
