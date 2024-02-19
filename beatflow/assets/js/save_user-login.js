@@ -129,6 +129,7 @@ document.getElementById('form_login').addEventListener('submit', function(event)
         window.location.href = 'main.html'; // Redirect to main.html
         if (isAdminLoggedIn) {
             alert('¡Bienvenido, administrador!');
+            window.location.href = 'welcome.html';
         }
     } else {
         alert('Usuario no registrado o Datos Incorrectos');
