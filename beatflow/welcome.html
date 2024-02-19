@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Beatflow</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/welcome.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    </head>
+
+<body>
+   
+    <header>
+        <nav class="navbar navbar-expand-lg bg-custom">
+            <div class="container-fluid">
+                <img class="img-logo" src="assets/media/LOGO1.png" alt="logo">
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="categoria/categoria-main.html">Canciones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="acerca.html">Lista de Favoritos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search" action="error404.html">
+                  <div class="buscador">
+                    <input type="search" placeholder="Buscar...">
+                    <button type="submit">Buscar</button>
+                  </div>
+                    <section class="p-3">
+    
+                      
+                      
+                    </section>
+                    <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i alt="" style="width: 30px; height: 30px; border-radius: 50%; margin-right: 5px;"> Usuario
+                  </a>
+                    <li class="nav-item dropdown">
+                     
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="assets/media/cara de ken.jpg" class="text-success" alt="Ícono de cuenta" style="width: 70px; height: 70px; border-radius: 50%; margin-right: 5px;"> Fede
+                    </a>
+                          
+                        <li><a class="dropdown-item" href="#">perfil</a></li>
+                        <li><a class="dropdown-item" href="#">Historial</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Descargas</a></li>
+                      </ul>
+                    </li>
+                </form>
+                  
+                </div>
+            </div>
+          </nav>
+          <!-- contenedor general -->
+          <section id="contenedor">
+            <div class="row">
+              <div class="col-12">
+                  <button class="btn btn-primary newUser" data-bs-toggle="modal" data-bs-target="#userForm">Nueva Playlist <i class="bi bi-plus-circle"></i></button>
+              </div>
+            </div>
+            <h1 class="text-light">ALBUNES RECOMENDADOS</h1>
+            <div class="modal fade" id="userForm">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                  <div class="modal-content">
+      
+                      <div class="modal-header">
+                          <h4 class="modal-title">Agregar una playlist</h4>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+      
+                      <div class="modal-body">
+      
+                          <form action="#" id="myForm">
+      
+                            <div class="input-group mb-3">
+                              <input type="text" id="nombrePlaylist" class="form-control" placeholder="Nombre de la playlist">
+                              <button class="btn btn-primary" type="button" onclick="agregarPlaylist()">Agregar Playlist</button>
+                            </div>
+                            </form>
+                            
+                                  
+                              </div>
+      
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      
+           <!--Read Data Modal-->
+           <div class="modal fade" id="readData">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                  <div class="modal-content">
+      
+                      <div class="modal-header">
+                          <h4 class="modal-title">Profile</h4>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+      
+                      <div class="modal-body">
+      
+                          <form action="#" id="myForm">
+      
+                           <h1>Agregar Playlists</h1>
+                           <div class="input-group mb-3">
+                           <input type="text" id="nombrePlaylist" class="form-control" placeholder="Nombre de la playlist">
+                           <button class="btn btn-primary" type="button" onclick="agregarPlaylist()">Agregar Playlist</button>
+                           </div>
+      
+                              
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+            <!-- contenedor de canciones -->
+            <div  class="container">
+              <div id="lateral" class="songList">
+                  <h1>BeatFlow - TOP 100 SONGS!</h1>
+                  <div class="songItemContainer">
+                      <div class="songItem">
+                          <img alt="1">
+                          <span class="songName">Let me Love You</span>
+                          <span class="songlistplay"><span class="timestamp">03:36 <i id="0" class="far songItemPlay fa-play-circle"></i> </span></span>
+                      </div>
+                      <div class="songItem">
+                          <img alt="1">
+                          <span class="songName">Let me Love You</span>
+                          <span class="songlistplay"><span class="timestamp">03:55 <i id="1" class="far songItemPlay fa-play-circle"></i> </span></span>
+                      </div>
+                      <div class="songItem">
+                          <img alt="1">
+                          <span class="songName">Let me Love You</span>
+                          <span class="songlistplay"><span class="timestamp">02:50 <i id="2" class="far songItemPlay fa-play-circle"></i> </span></span>
+                      </div>
+                      <div class="songItem">
+                          <img alt="1">
+                          <span class="songName">Let me Love You</span>
+                          <span class="songlistplay"><span class="timestamp">05:31 <i id="3" class="far songItemPlay fa-play-circle"></i> </span></span>
+                      </div>
+                      <div class="songItem">
+                          <img alt="1">
+                          <span class="songName">Let me Love You</span>
+                          <span class="songlistplay"><span class="timestamp">03:53 <i id="4" class="far songItemPlay fa-play-circle"></i> </span></span>
+                      </div>
+                      <div class="songItem">
+                          <img alt="1">
+                          <span class="songName">Let me Love You</span>
+                          <span class="songlistplay"><span class="timestamp">03:32 <i id="5" class="far songItemPlay fa-play-circle"></i> </span></span>
+                      </div>
+                      <div class="songItem">
+                          <img alt="1">
+                          <span class="songName">Let me Love You</span>
+                          <span class="songlistplay"><span class="timestamp">03:23 <i id="6" class="far songItemPlay fa-play-circle"></i> </span></span>
+                      </div>
+                      <div class="songItem">
+                          <img alt="1">
+                          <span class="songName">Let me Love You</span>
+                          <span class="songlistplay"><span class="timestamp">03:49 <i id="7" class="far songItemPlay fa-play-circle"></i> </span></span>
+                      </div>
+                      <div class="songItem">
+                          <img alt="1">
+                          <span class="songName">Let me Love You</span>
+                          <span class="songlistplay"><span class="timestamp">02:59 <i id="8" class="far songItemPlay fa-play-circle"></i> </span></span>
+                      </div>
+                      <div class="songItem">
+                          <img alt="1">
+                          <span class="songName">Let me Love You</span>
+                          <span class="songlistplay"><span class="timestamp">03:37 <i id="9" class="far songItemPlay fa-play-circle"></i> </span></span>
+                      </div>
+                  </div>
+              </div>
+              <div class="songBanner"></div>
+
+              <!-- playlist -->
+             <div id="principal" class="playlist">
+              <div class="songList">
+              <h1>Mis playlist</h1>
+              <ul id="listaPlaylists"></ul>
+              <!-- Div para el fondo con el GIF -->
+        <div id="playlistBackground"></div>
+             </div>
+             </div>
+
+          </div>
+          
+       
+     
+      
+      </section>
+
+       <!-- reproductor -->
+        <div class="bottom">
+            <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+            <div class="icons">
+              
+                <!-- fontawesome icons - botones del reproductor -->
+                <i class="fas fa-3x fa-step-backward" id="previous"></i>
+                <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+                <i class="fas fa-3x fa-step-forward" id="next"></i> 
+            </div>
+            
+       <!-- efectos del reproductor -->
+       <div class="songInfo">
+        <img src="assets/media/playing.gif" width="42px" alt="" id="gif"> <span id="masterSongName">Warriyo - Mortals [NCS Release]</span>
+    </div>
+            <div>
+   
+</div>
+        </div>
+     
+          
+    
+    </header>
+
+    
+    <footer>
+      <ul class="nav bg-custom">
+        <li class="nav-item">
+          <div class="nav-link" href="#">BeatFlow</div>
+        <li class="nav-item">
+          <a class="nav-link" href="acerca.html">Acerca de</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a id="redes" class="nav-link" href="error404.html">
+            <img class="red" src="imagenes/instagram.png">
+            <img class="red" src="imagenes/whatsapp.png">
+            <img class="red" src="imagenes/facebook.png">
+          </a>
+        </li>
+      </ul>
+
+    </footer>    
+    <script>
+      // Función para agregar playlists
+  function agregarPlaylist() {
+    // Obtener el nombre de la playlist del input
+    const nombrePlaylist = document.getElementById("nombrePlaylist").value;
+  
+    // Validar que el nombre no esté vacío
+    if (nombrePlaylist === "") {
+      alert("Debes ingresar un nombre para la playlist");
+      return;
+    }
+  
+    // Crear un nuevo objeto para la playlist
+    const nuevaPlaylist = {
+      nombre: nombrePlaylist,
+      canciones: [], // Array vacío para almacenar las canciones
+    };
+  
+    // Agregar la nueva playlist al array de playlists
+    playlists.push(nuevaPlaylist);
+  
+    // **Actualizar la interfaz para mostrar la nueva playlist**
+    const listaPlaylists = document.getElementById("listaPlaylists");
+    const nuevoElemento = document.createElement("li");
+    nuevoElemento.classList.add("list-group-item");
+    nuevoElemento.textContent = nombrePlaylist;
+  
+    // **Crear y agregar el botón de eliminar**
+    const botonEliminar = document.createElement("button");
+    botonEliminar.textContent = "Eliminar";
+    botonEliminar.addEventListener("click", () => {
+      eliminarPlaylist(nombrePlaylist);
+    });
+    nuevoElemento.appendChild(botonEliminar);
+  
+    listaPlaylists.appendChild(nuevoElemento);
+  
+    // Limpiar el input del nombre
+    document.getElementById("nombrePlaylist").value = "";
+  }
+  
+  // Función para eliminar playlists
+  function eliminarPlaylist(nombrePlaylist) {
+    // Encontrar el índice de la playlist en el array
+    const indicePlaylist = playlists.findIndex((playlist) => playlist.nombre === nombrePlaylist);
+  
+    // Si se encontró la playlist, eliminarla del array
+    if (indicePlaylist !== -1) {
+      playlists.splice(indicePlaylist, 1);
+  
+      // **Actualizar la interfaz para eliminar el elemento de la lista**
+      const listaPlaylists = document.getElementById("listaPlaylists");
+      const elementoAEliminar = listaPlaylists.querySelector(`li:nth-child(${indicePlaylist + 1})`);
+      listaPlaylists.removeChild(elementoAEliminar);
+    }
+  }
+  
+  // Array para almacenar las playlists (se debe inicializar)
+  const playlists = [];
+  
+  // **Mostrar las playlists existentes (se debe llamar a la función)**
+  mostrarPlaylists();
+  
+  // Función para mostrar playlists (opcional)
+  function mostrarPlaylists() {
+    // Recorrer el array de playlists
+    for (const playlist of playlists) {
+      // Mostrar el nombre de la playlist
+      // (Aquí puedes usar código específico para tu interfaz)
+  
+      // Mostrar un botón para eliminar la playlist
+      const botonEliminar = document.createElement("button");
+      botonEliminar.textContent = "Eliminar";
+      botonEliminar.addEventListener("click", () => {
+        eliminarPlaylist(playlist.nombre);
+      });
+  
+      // (Aquí puedes usar código para agregar el botón a la interfaz)
+    }
+  }
+  
+</script>
+<script src="assets/js/welcome.js"></script>
+<script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+      
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    
+</body>
+</html>

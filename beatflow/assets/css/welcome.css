@@ -1,0 +1,481 @@
+body {
+  font-family: 'Roboto', sans-serif;;
+  margin: 0;
+  padding: 0;
+  background-color: #454545;
+}
+
+body::before {
+  content: "";
+  background: url('https://img.freepik.com/premium-vector/cinema-background-pattern_1061-522.jpg?w=826') center/cover no-repeat; /* Set the background image */
+  position: fixed;
+  background-size: contain;
+  background-repeat:repeat;
+  width: 100%;
+  height: 100%;
+  opacity: 0.03;
+  z-index: -1;
+}
+
+
+.navbar.bg-custom {
+  background-color: #FF6000;
+}
+.btn.btn-custom {
+  background-color: #ffffff;
+  color: #FF6000;
+}
+.btn.btn-custom:hover {
+  background-color:#454545;
+  color: #ffffff;
+}
+
+.content{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #FFE6C7;
+  margin: 10px;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.about p{
+  max-width: 75%;
+}
+
+.team  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #FFE6C7;
+  margin: 10px;
+  padding: 50px;
+  border-radius: 10px;
+  min-width: 100px;
+}
+
+.team p{
+  max-width: 75%;
+  margin-bottom: 50px;
+  
+}
+
+.grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.img-logo {
+  height: 90px;
+  width: 90px;
+}
+
+
+.card {
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;   
+  transition: background-color 0.5s;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card img{
+  border-radius: 300px;
+  max-width: 200px;
+  max-height: 200px;
+  height: auto;
+  object-fit: cover;
+}
+
+.caption{
+  padding-top: 10%;
+}
+
+.caption h3{
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.caption p{
+  
+  margin-left: 15px;
+}
+
+.card:hover{
+  background-color:#FF6000;
+  color: #ffffff;
+}
+
+#redes {
+  width: auto;
+}
+
+#redes img{
+  width: 30px;
+  margin-left: 5px;
+}
+
+.nav-item{
+  margin: 5px;
+  width: auto
+}
+
+.nav.bg-custom{
+  background-color:#aaaaaa;
+}
+
+.nav-link{
+  color: black;
+  font-size: larger;
+}
+
+footer {
+  margin-top: 100px;
+}
+
+@media (max-width: 870px) {
+  .grid {
+      display: flex;
+      flex-direction: column;
+  }
+  .card img {
+      max-width: 200px;
+      height: auto;
+      object-fit: cover;
+  }
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 72vh;
+  background-color: black;
+  color: white;
+  font-family: 'Varela Round', sans-serif;
+  margin: 23px auto;
+  border-radius: 12px;
+  padding: 34px;
+  background-image: url('bg.jpg');
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Cambiar a un diseño de columna en dispositivos móviles */
+  }
+
+  .songItem {
+    width: 100%; /* Ajustar el ancho de las tarjetas para ocupar todo el ancho del contenedor en dispositivos móviles */
+  }
+}
+
+/* Estilos para dispositivos de pantalla pequeña */
+@media (max-width: 576px) {
+  .songName {
+    font-size: 16px; /* Reducir el tamaño de la fuente del nombre de la canción en dispositivos de pantalla pequeña */
+  }
+
+  .timestamp {
+    font-size: 14px; /* Reducir el tamaño de la fuente de la duración en dispositivos de pantalla pequeña */
+  }
+}
+
+.container > div {
+  flex: 1; /* Hace que ambos divs hijos ocupen el mismo espacio */
+  padding: 10px;
+}
+
+.Playlist {
+  background-color: rgba(1, 12, 63, 0.7);
+  box-shadow: 0 4px 2px 2px #000000;
+  overflow-y: scroll; /* Permite el desplazamiento para la lista de reproducción */
+  padding: 2.27rem 1.16rem;
+}
+
+.songItemContainer {
+  /* Tus estilos existentes para la lista de canciones */
+}
+.bottom{
+  position: sticky;
+  bottom: 0;
+  height: 130px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+}
+
+.icons{
+  margin-top: 14px; 
+}
+.icons i{
+  cursor: pointer;
+}
+
+#myProgressBar{
+  width: 80vw; 
+  cursor: pointer;
+}
+
+.songItemContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.songItem {
+  width: 220px; /* Aumentar el ancho de las tarjetas */
+  text-align: center;
+}
+
+.songItem img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.songName {
+  font-size: 18px; /* Aumentar el tamaño de la fuente del nombre de la canción */
+  margin-top: 10px; /* Ajustar el margen superior */
+}
+
+.timestamp {
+  font-size: 16px; /* Aumentar el tamaño de la fuente de la duración */
+  color: #777;
+}
+
+.fa-play-circle {
+  font-size: 24px; /* Aumentar el tamaño del botón de reproducción */
+}
+
+
+.songInfo{
+  position: absolute;
+  left: 10vw;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img{
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
+
+@media only screen and (max-width: 1100px) {
+  body {
+    background-color: red;
+  }
+}
+
+
+.Playlist {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  overflow-y: scroll;
+  width: 37%;
+  max-height: 950px;
+  padding: 2.27rem 1.16rem;
+  background-color: rgba(1, 12, 63, 0.7);
+  box-shadow: 0 4px 2px 2px #000000;
+}
+
+.Playlist input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid #6f6f6f;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.55rem;
+  color: #fff;
+}
+
+.Playlist-save {
+  cursor: pointer;
+  width: 10rem;
+  padding: .77rem 0;
+  border-radius: 54px;
+  border-width: 0px;
+  margin-top: 1.27rem;
+  background-color: #6c41ec;
+  text-align: center;
+  font-size: .83rem;
+  transition: background-color .25s;
+  color: #fff;
+  font-weight: 500;
+}
+
+.Playlist-save:hover {
+  background-color: rgba(108, 65, 233, .7);
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+@media only screen and (max-width: 1020px) {
+  .Playlist {
+    width: 90%;
+  }
+}
+.Track {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(256, 256, 256, 0.8);
+}
+
+.Track-action {
+  cursor: pointer;
+  padding: .5rem;
+  font-size: 1.05rem;
+  transition: color .25s;
+  border: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+}
+
+.Track-action:hover {
+  color: rgba(265, 265, 265, .5);
+}
+
+.Track-information {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 72px;
+}
+
+.Track-information h3 {
+  margin-bottom: .22rem;
+}
+
+.Track-information p {
+  font-size: .83rem;
+  font-weight: 300;
+  color: rgba(256, 256, 256, 0.8);
+}
+
+.TrackList {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+}
+
+.playlist {
+  flex: 1;
+}
+
+.songList {
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+ 
+
+  .playlist {
+    flex: 1;
+  }
+
+  .songList {
+    flex: 1;
+  }
+}
+
+/* ajustes nav-bar 19-02 */
+.navbar-nav {
+  flex-grow: 1; /* Hace que los elementos de la barra de navegación ocupen todo el espacio disponible */
+}
+
+.navbar-nav .nav-item {
+  margin-right: 10px; /* Ajusta el espacio entre los elementos de la barra de navegación */
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff !important; /* Color de texto blanco para los enlaces */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #dddddd !important; /* Color de texto blanco más claro al pasar el cursor sobre los enlaces */
+}
+
+#navbarSupportedContent form {
+  margin-right: 10px; /* Ajusta el espacio a la derecha del formulario de búsqueda */
+}
+
+#navbarSupportedContent .dropdown-menu {
+  background-color: #FF6000; /* Cambia el color de fondo del menú desplegable */
+}
+
+#navbarSupportedContent .dropdown-menu a {
+  color: #ffffff !important; /* Color de texto blanco para los elementos del menú desplegable */
+}
+
+#navbarSupportedContent .dropdown-menu a:hover {
+  background-color: #dd5500; /* Cambia el color de fondo al pasar el cursor sobre los elementos del menú desplegable */
+}
+#playlistBackground {
+  background-image: url('https://i.gifer.com/1hV.gif');
+  background-size: cover; /* Ajusta el tamaño del fondo para cubrir todo el contenedor */
+  background-position: center; /* Centra el fondo */
+  height: 300px; /* Ajusta la altura según sea necesario */
+  /* Otros estilos según tus necesidades */
+}
+
+.playlist-item {
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+
+#principal {
+  position: relative;
+  
+  background-size: cover;
+  background-position: center;
+  padding: 20px; /* Ajusta el espacio interior según sea necesario */
+  border-radius: 10px; /* Redondea las esquinas del contenedor */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Agrega sombra al contenedor */
+}
+
+#listaPlaylists li {
+  font-size: 18px; /* Ajusta el tamaño de la fuente */
+  margin-bottom: 5px; /* Agrega un espacio entre elementos */
+  padding: 10px; /* Ajusta el espacio interior según sea necesario */
+  background-color: rgba(255, 255, 255, 0.8); /* Agrega un fondo semitransparente */
+  border-radius: 5px; /* Redondea las esquinas de los elementos */
+}
+
+.newUser {
+  background-color: #007bff; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Ajusta el relleno */
+  border-radius: 5px; /* Redondea las esquinas */
+  font-size: 18px; /* Tamaño de la fuente */
+  cursor: pointer; /* Cambia el cursor al pasar sobre él */
+  transition: background-color 0.3s ease; /* Agrega una transición suave al color de fondo */
+}
+
+.newUser:hover {
+  background-color: #0056b3; /* Cambia el color de fondo al pasar el cursor */
+}
