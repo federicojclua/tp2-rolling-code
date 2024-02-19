@@ -1,0 +1,347 @@
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+main a{
+    text-decoration: none;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #454545;
+   
+}
+
+
+.navbar.bg-custom {
+    background-color: #FF6000;
+    position: relative;
+    z-index: 1000;
+}
+
+.btn.btn-custom {
+    background-color: #ffffff;
+    color: #FF6000;
+}
+.btn.btn-custom:hover {
+    background-color:#454545;
+    color: #ffffff;
+}
+
+
+
+/* Estilos de la barra de navegación */
+.navbar.bg-custom {
+    background-color: #FF6000;
+    position: relative; /* Añadido */
+    z-index: 1000; /* Añadido */
+}
+
+.btn.btn-custom {
+    background-color: #ffffff;
+    color: #FF6000;
+}
+
+.btn.btn-custom:hover {
+    background-color: #454545;
+    color: #ffffff;
+}
+#suggestionsContainer {
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-height: 150px;
+    overflow-y: auto;
+    display: none; }
+  
+  .suggestions-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .suggestions-list li {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .suggestion {
+    
+    font-weight: normal; 
+  
+  .suggestion:hover {
+    background-color: #eee;
+  }
+}
+
+
+
+.carousel {
+    width: 100%;
+}
+
+
+
+.row {
+    background-size: cover;
+    background-color: #FF6000;
+    margin: 0px auto;
+    padding: 0px 10px 25px 10px ;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+
+.col {
+    text-decoration: none;
+    text-align: center;
+}
+
+
+#mid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    background-color: #454545;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 100%;
+    z-index: 10;
+}
+
+
+* .carousel-caption {
+    background-color:  #FF6000 ; 
+    border-radius: 10px;
+    padding: 5px; 
+    width: 300px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .carousel-caption h2,
+  .carousel-caption p {
+    color: #FFE6C7; 
+    text-align: center; 
+    margin: 0; 
+  }
+
+
+/* Estilos para el texto de error */
+.error {
+  color: #FF6000; 
+  font-size: 24px; 
+  text-align: center; 
+  margin: 10px auto 0; /* Ajusta los márgenes superior e inferior */
+}
+
+/* Estilos para el contenedor de la imagen */
+.image-container {
+  width: 50%;
+  margin: 0 auto; /* Elimina el margen superior e inferior */
+  padding: 20px; 
+  text-align: center; /* Centra la imagen */
+}
+
+/* Estilos para la imagen de error */
+.image-container img {
+  width: 100%;
+  display: block;
+  opacity: 0.3; 
+}
+
+
+
+@media (max-width: 800px) {
+    #carouselExampleCaptions img{
+        height: 100vw;
+        object-fit: cover;
+        object-position: center 120%;
+    }
+
+
+    #mid{
+        flex-direction: column;
+    }
+   
+
+}
+
+
+
+.nav-item{
+    margin: 5px;
+    width: auto
+}
+
+.nav.bg-custom{
+    background-color:#aaaaaa;
+}
+
+.nav-link{
+    color: black;
+    font-size: larger;
+}
+
+/* Estilos para el formulario de búsqueda */
+form.d-flex {
+    position: relative;
+    z-index: 1;
+}
+
+/*reproductor botones*/
+
+/* Estilos para el contenedor de los botones */
+/* Estilos para el contenedor de los botones */
+/* Estilos para el contenedor de los botones */
+.controls-container {
+  text-align: center;
+  margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+}
+
+/* Estilos para los botones de reproducción y detención */
+.btn-primary,
+.btn-danger {
+  margin: 10px; /* Espacio entre los botones */
+  width: 150px; /* Ancho de los botones */
+}
+
+/* Media queries para ajustar los estilos en diferentes tamaños de pantalla */
+@media (max-width: 576px) {
+  /* Para pantallas pequeñas como 375x667 y 360x740 */
+  .controls-container {
+    margin-top: 15px; /* Ajusta el margen superior para pantallas más pequeñas */
+  }
+
+  .btn-primary,
+  .btn-danger {
+    width: 120px; /* Reducir el ancho de los botones para pantallas pequeñas */
+  }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+  /* Para pantallas medianas como iPhone 646x840 */
+  .controls-container {
+    margin-top: 25px; /* Ajusta el margen superior para pantallas medianas */
+  }
+
+  .btn-primary,
+  .btn-danger {
+    width: 130px; /* Ancho de los botones para pantallas medianas */
+  }
+}
+
+@media (min-width: 993px) {
+  /* Para pantallas grandes como portátiles */
+  .controls-container {
+    margin-top: 30px; /* Ajusta el margen superior para pantallas grandes */
+  }
+
+  .btn-primary,
+  .btn-danger {
+    width: 140px; /* Ancho de los botones para pantallas grandes */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*detalle musica*/
+
+/* Estilos para dispositivos grandes */
+@media (min-width: 1025px) {
+    .tarjeta-detalle {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+  
+    .tarjeta-detalle img {
+      max-width: 40%;
+      margin-bottom: 0;
+      margin-right: 20px;
+      margin-top: 20px; /* Ajuste de margen superior */
+    }
+  
+    .tarjeta-detalle .info {
+      flex-grow: 1;
+      max-width: 60%;
+    }
+  }
+  
+  /* Estilos para dispositivos medianos como iPad Pro y otros */
+  @media (min-width: 768px) and (max-width: 1280px) {
+    .tarjeta-detalle {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      margin-left: 10px; /* Reducción de margen izquierdo */
+      margin-right: 10px; /* Reducción de margen derecho */
+    }
+  
+    .tarjeta-detalle img {
+      margin-top: 20px; /* Ajuste de margen superior */
+    }
+    .tarjeta-detalle .info {
+      max-width: 55%; /* Reducción del ancho del texto */
+    }
+  }
+  
+  /* Estilos para dispositivos pequeños como iPad Mini y otros */
+  @media (max-width: 767px) {
+    .tarjeta-detalle {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      align-items: center;
+    }
+  
+    .tarjeta-detalle img {
+      margin-bottom: 10px;
+      margin-top: 30px; /* Ajuste de margen superior */
+    }
+  }
+

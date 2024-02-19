@@ -1,0 +1,199 @@
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+main a{
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #454545;
+}
+
+
+.navbar.bg-custom {
+    background-color: #FF6000;
+    position: relative;
+    z-index: 1000;
+}
+
+.btn.btn-custom {
+    background-color: #ffffff;
+    color: #FF6000;
+}
+.btn.btn-custom:hover {
+    background-color:#454545;
+    color: #ffffff;
+}
+
+.content{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+#suggestionsContainer {
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-height: 150px;
+    overflow-y: auto;
+    display: none; /* Initially hidden */
+  }
+  
+  .suggestions-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .suggestions-list li {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .suggestion {
+    
+    font-weight: normal; 
+  }
+  
+  .suggestion:hover {
+    background-color: #eee;
+  }
+  
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFE6C7;
+    margin: 10px;
+    padding: 50px;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.about p{
+    max-width: 100%;
+    text-align: justify;
+    font-size: larger;
+    
+}
+hr {
+    border: none;
+    border-top: 5px solid #FF6000; 
+}
+.team  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFE6C7;
+    margin: 10px;
+    padding: 50px;
+    border-radius: 10px;
+    min-width: 100px;
+}
+
+.team p{
+    max-width: 75%;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;   
+    transition: background-color 0.5s;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card img{
+    border-radius: 300px;
+    max-width: 200px;
+    max-height: 200px;
+    height: auto;
+    object-fit: cover;
+}
+
+.caption{
+    padding-top: 10%;
+}
+
+.caption h5{
+    margin-top: 15px;
+    margin-left: 40px;
+}
+
+.caption p{
+    
+    margin-left: 30px;
+    font-weight: 500;
+}
+
+
+.card:hover{
+    background-color:#FF6000;
+    color: #ffffff;
+}
+
+
+.nav-item{
+    margin: 5px;
+    width: auto
+}
+
+.nav.bg-custom{
+    background-color:#aaaaaa;
+}
+
+.nav-link{
+    color: black;
+    font-size: larger;
+}
+
+footer {
+    margin-top: 100px;
+}
+
+@media (max-width: 870px) {
+    .grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .card img {
+        max-width: 200px;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+
+/* Estilos para el formulario de búsqueda */
+form.d-flex {
+    position: relative;
+    z-index: 1;
+}
