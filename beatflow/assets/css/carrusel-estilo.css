@@ -66,6 +66,10 @@ body {
   }
 }
 
+.img-logo {
+  height: 90px;
+  width: 90px;
+}
 /* Tarjetas */
 .card {
   border: 1px solid #ffe6c7;

@@ -19,7 +19,10 @@ body {
     background-color: #454545;
    
 }
-
+.img-logo {
+  height: 90px;
+  width: 90px;
+}
 
 .navbar.bg-custom {
     background-color: #FF6000;

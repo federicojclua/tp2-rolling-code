@@ -15,6 +15,10 @@ body{
     color: #454545; /* Color principal del texto */
 } 
 
+.img-logo {
+    height: 90px;
+    width: 90px;
+  }
 main{
     width: 100%;
     padding: 20px;
@@ -27,7 +31,7 @@ main{
     max-width: 800px;
     margin: auto;
     position:  relative;
-    margin-top: 90px;
+    /*margin-top: 90px; */
 }
 
 .box_1{
@@ -38,7 +42,7 @@ main{
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     background-color: rgba(255, 96, 0, 0.5);
-
+    margin-top: 5px;
 }
 
 .box_1 div{
@@ -145,7 +149,11 @@ main{
     margin-top: auto;
     
 }
-
+.img-logo {
+    height: 90px;
+    width: 90px;
+  }
+  
 
 
 @media screen and (max-width: 850px){
